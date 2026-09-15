@@ -47,7 +47,16 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
-$gray                       : #7a8288;
+/* UT Austin brand palette: Burnt Orange & White (primary), secondary accents */
+$ut-burnt-orange            : #bf5700;
+$ut-white                   : #ffffff;
+$ut-slate                   : #333f48; // secondary: dark slate
+$ut-teal                    : #005f86; // secondary: blue-teal
+$ut-green                   : #43695b; // secondary: green
+$ut-gold                    : #f2a900; // secondary: gold
+$ut-cream                   : #d6d2c4; // secondary: warm gray/cream
+
+$gray                       : $ut-slate;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
@@ -60,11 +69,11 @@ $code-background-color-dark : $light-gray;
 $text-color                 : $dark-gray;
 $border-color               : $lighter-gray;
 
-$primary-color              : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
+$primary-color              : $ut-burnt-orange;
+$success-color              : $ut-green;
+$warning-color              : $ut-gold;
 $danger-color               : #ee5f5b;
-$info-color                 : #52adc8;
+$info-color                 : $ut-teal;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -90,11 +99,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
+$link-color                 : $ut-burnt-orange;
 $link-color-hover           : mix(#000, $link-color, 25%);
 $link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$masthead-link-color        : $ut-white;
+$masthead-link-color-hover  : $ut-cream;
 
 
 /*
