@@ -1,0 +1,15 @@
+{% comment %}
+  Google Analytics 4. Loads only when _config.yml has
+  analytics.provider: "ga4" and analytics.google.tracking_id set (G-XXXXXXXXXX).
+  Outbound link clicks and file downloads (e.g. the CV PDF) are tracked by
+  GA4 "Enhanced measurement", which is on by default for new web streams.
+{% endcomment %}
+{% if site.analytics.provider == "ga4" and site.analytics.google.tracking_id %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.tracking_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.analytics.google.tracking_id }}');
+</script>
+{% endif %}

@@ -73,9 +73,9 @@ social:
 
 # Analytics
 analytics:
-  provider               :  false # false (default), "google", "google-universal", "custom"
+  provider               :  "ga4" # "ga4" = Google Analytics 4 (used by the current design); false turns it off
   google:
-    tracking_id          :
+    tracking_id          :  "G-XWM4CEH13C" # GA4 measurement ID; leave empty to turn tracking off
 
 
 # Site Author
