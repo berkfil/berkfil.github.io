@@ -1,22 +1,25 @@
-# Research projects shown in the Research section of the home page.
+# Research projects shown on the Research page (/research/).
 # Add `url:` to an entry (for example /files/paper.pdf) to show a button;
 # `link_text:` changes the button label (default "Read more").
 
-- title: "Negative campaigning and the affective tipping point"
-  role: "Dissertation"
+- title: "Dissertation"
+  role: "In progress"
   description: >-
-    My dissertation examines whether negative campaigning persuades voters beyond
-    simply mobilizing them, proposing a cognitive mechanism I call the
-    "affective tipping point."
+    My dissertation asks how different understandings of legitimacy shape voters'
+    evaluations of parties through negative campaigning.
 
 - title: "The legitimacy of far-right parties"
   role: "Dissertation chapter"
   description: >-
     A related chapter looks at the legitimacy of far-right parties.
 
-- title: "Campaign contact and partisan media"
-  role: "Machine learning project"
+- title: "Blinding Lights: Local Muslim Population and Far-Right Vote in Germany"
+  role: "Paper, presented at MPSA 2024"
   description: >-
-    Applying machine learning methods, including double machine learning and causal
-    forests, to panel survey data to study how the effects of campaign contact are
-    moderated by partisan media consumption.
+    Examines the effect of immigration on far-right parties, applying contact theory
+    using geospatial analysis with satellite data.
+
+- title: "The Electoral Consequences of Historical Cleavages and Migration: A Geographic Discontinuity Approach"
+  role: "M.A. thesis, Sabancı University, 2023"
+  description: >-
+    My M.A. thesis in Political Science at Sabancı University.

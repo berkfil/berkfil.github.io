@@ -1,0 +1,61 @@
+---
+layout: page
+title: "Research"
+permalink: /research/
+redirect_from:
+  - /publications/
+---
+
+{% comment %}
+  Projects come from _data/research.yml.
+  Publications come from the _publications folder, newest first
+  (front matter used: title, venue, date, paperurl, excerpt).
+  Presentations come from _data/presentations.yml.
+{% endcomment %}
+
+{% if site.author.googlescholar %}
+<p class="page-intro">You can also find my work on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</p>
+{% endif %}
+
+<section class="group">
+  <h2 class="subhead">Projects</h2>
+  {% include research-list.html %}
+</section>
+
+{% if site.publications.size > 0 %}
+<section class="group">
+  <h2 class="subhead">Publications</h2>
+  <div class="items">
+    {% for pub in site.publications reversed %}
+    <article class="item">
+      <div>
+        <h3>{{ pub.title }}</h3>
+        <p class="role">{% if pub.venue %}{{ pub.venue }}, {% endif %}{{ pub.date | date: "%Y" }}</p>
+        {% if pub.paperurl %}<a class="btn" href="{{ pub.paperurl | relative_url }}">Read paper</a>{% endif %}
+      </div>
+      <div class="desc">{{ pub.excerpt | markdownify }}</div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if site.data.presentations %}
+<section class="group">
+  <h2 class="subhead">Presentations</h2>
+  <div class="items">
+    {% for e in site.data.presentations %}
+    <article class="item">
+      <div>
+        <h3>{{ e.title }}</h3>
+        <p class="role">{{ e.when }}</p>
+      </div>
+      <div class="desc">
+        {% if e.subtitle %}<p>{{ e.subtitle | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+        {% if e.detail %}<p>{{ e.detail | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

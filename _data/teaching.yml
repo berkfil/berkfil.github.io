@@ -1,0 +1,51 @@
+# Teaching shown on /teaching/, grouped by institution.
+# Entry fields: when, title (course), subtitle (role), detail. Markdown allowed.
+
+- label: UT Austin
+  entries:
+    - when: "Fall 2026"
+      title: "GOV 324L: Government and Politics of Western Europe"
+      subtitle: "Teaching Assistant"
+      detail: "Graded exams and response papers, held regular office hours."
+    - when: "Spring 2026"
+      title: "GOV 312L: Issues and Policies in American Government"
+      subtitle: "Teaching Assistant"
+      detail: "Graded exams and response papers, held regular office hours."
+    - when: "Fall 2025"
+      title: "GOV 365V: The Comprehensive Notion of European Security"
+      subtitle: "Teaching Assistant"
+      detail: "Graded exams and response papers, held regular office hours."
+    - when: "Spring 2023"
+      title: "GOV 312L: Issues and Policies in American Government"
+      subtitle: "Teaching Assistant"
+      detail: "Graded exams and response papers, held regular office hours."
+    - when: "Fall 2023"
+      title: "GOV 324L: Government and Politics of Western Europe"
+      subtitle: "Teaching Assistant"
+      detail: "Graded exams and response papers, held regular office hours."
+
+- label: Sabancı University
+  entries:
+    - when: "2021–2023"
+      title: "SPS 102: Humanity and Society"
+      subtitle: "Teaching Assistant"
+      detail: "Prepared and led weekly discussion sessions for the freshman undergraduate course, graded exams and response papers, held regular office hours."
+
+- label: Boğaziçi University
+  entries:
+    - when: "Fall 2020"
+      title: "POLS 203: Social Statistics"
+      subtitle: "Teaching Assistant"
+      detail: "Prepared and led weekly sessions on R for the undergraduate statistics course."
+    - when: "Spring 2020"
+      title: "CMPE 140: Introduction to Computing for Economists"
+      subtitle: "Teaching Assistant"
+      detail: "An introductory data science course based on R; attended problem sessions and prepared the material for these sessions and quizzes."
+    - when: "Fall 2019"
+      title: "POLS 303: Fundamentals of Political Economy"
+      subtitle: "Teaching Assistant"
+      detail: "Prepared and led weekly discussion sessions."
+    - when: "Fall 2018"
+      title: "POLS 101: Introduction to Political Science"
+      subtitle: "Teaching Assistant"
+      detail: "Prepared and led weekly discussion sessions."

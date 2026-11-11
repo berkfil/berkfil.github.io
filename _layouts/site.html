@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,400&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
@@ -30,19 +30,18 @@
         {% for link in site.data.navigation.main %}
         <a href="{{ link.url | relative_url }}"{% if link.url == page.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
         {% endfor %}
-        {% include site-icons.html %}
       </nav>
     </div>
   </header>
 
-  <main id="content" class="wrap">
+  <main id="content">
     {{ content }}
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
       <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</span>
-      {% if site.author.email %}<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>{% endif %}
+      {% include site-icons.html %}
     </div>
   </footer>
 </body>

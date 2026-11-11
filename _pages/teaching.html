@@ -1,12 +1,8 @@
 ---
-layout: archive
+layout: page
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
 ---
 
-{% include base_path %}
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% comment %}Teaching content lives in _data/teaching.yml.{% endcomment %}
+{% for s in site.data.teaching %}{% include cv-section.html section=s %}{% endfor %}

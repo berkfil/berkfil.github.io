@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Berk Filcan"
 title_separator          : "-"
 name                     : &name "Berk Filcan"
-description              : &description "Ph.D. student in Government at The University of Texas at Austin, studying electoral behavior, political communication, and quantitative methods."
+description              : &description "Ph.D. student in Government at The University of Texas at Austin, studying party politics, electoral behavior and election campaigns in Europe."
 url                      : https://www.berkfilcan.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "berkfil/berkfil.github.io"
@@ -89,7 +89,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=QqFt7WIAAAAJ&hl=en"
   email            : "filcan@utexas.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://liberalarts.utexas.edu/government/gradstudents/bf9677"
   bitbucket        :
   codepen          :
   dribbble         :

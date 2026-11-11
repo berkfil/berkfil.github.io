@@ -1,0 +1,26 @@
+{% comment %}
+  Renders one { label, body or entries } section (e.g. from _data/teaching.yml)
+  as a labeled section.
+  Usage: {% include cv-section.html section=s %}
+{% endcomment %}
+{% assign s = include.section %}
+<section class="section">
+  <div class="label"><span>{{ s.label }}</span></div>
+  <div class="body">
+    {% if s.body %}{{ s.body | markdownify }}{% endif %}
+    {% if s.entries %}
+    <div class="entries">
+      {% for e in s.entries %}
+      <div class="entry">
+        <div class="when">{{ e.when }}</div>
+        <div class="what">
+          <span class="title">{{ e.title }}</span>{% if e.place %}<span class="place">, {{ e.place }}</span>{% endif %}
+          {% if e.subtitle %}<div class="subtitle">{{ e.subtitle | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
+          {% if e.detail %}<div class="detail">{{ e.detail | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>

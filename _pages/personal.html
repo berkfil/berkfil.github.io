@@ -1,0 +1,20 @@
+---
+layout: page
+title: "Personal"
+permalink: /personal/
+# To add a video, add an entry with its YouTube id (the part after "watch?v="),
+# a title (used for accessibility) and an optional `note` in Markdown shown above it.
+videos:
+  - id: qDs8IEHOXLg
+    title: "Berk-Kim Milyoner Olmak İster"
+    note: In October 2019, I was a contestant on *Kim Milyoner Olmak İster*, the Turkish version of *Who Wants to Be a Millionaire?*, and made it to the penultimate question.
+---
+
+{% for v in page.videos %}
+<section class="video-block">
+  {% if v.note %}<div class="body">{{ v.note | markdownify }}</div>{% endif %}
+  <div class="video">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ v.id }}" title="{{ v.title | escape }}" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
+{% endfor %}

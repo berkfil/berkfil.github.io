@@ -1,0 +1,12 @@
+# Conference presentations shown on /research/.
+# Entry fields: when, title (event), subtitle, detail. Markdown allowed.
+
+- when: "April 2024"
+  title: "82nd Midwest Political Science Association Annual Meeting"
+  subtitle: "Presented *Blinding Lights: Local Muslim Population and Far-Right Vote in Germany*"
+  detail: "On the effect of immigration on far-right parties, applying contact theory using geospatial analysis with satellite data."
+
+- when: "Sep 2020"
+  title: "American Political Science Association Annual Meeting"
+  subtitle: "Network theory application workshop in R"
+  detail: "Chaired by Asst. Prof. Başak Taraktaş."
