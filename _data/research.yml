@@ -1,0 +1,22 @@
+# Research projects shown in the Research section of the home page.
+# Add `url:` to an entry (for example /files/paper.pdf) to show a button;
+# `link_text:` changes the button label (default "Read more").
+
+- title: "Negative campaigning and the affective tipping point"
+  role: "Dissertation"
+  description: >-
+    My dissertation examines whether negative campaigning persuades voters beyond
+    simply mobilizing them, proposing a cognitive mechanism I call the
+    "affective tipping point."
+
+- title: "The legitimacy of far-right parties"
+  role: "Dissertation chapter"
+  description: >-
+    A related chapter looks at the legitimacy of far-right parties.
+
+- title: "Campaign contact and partisan media"
+  role: "Machine learning project"
+  description: >-
+    Applying machine learning methods, including double machine learning and causal
+    forests, to panel survey data to study how the effects of campaign contact are
+    moderated by partisan media consumption.

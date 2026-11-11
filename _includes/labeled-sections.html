@@ -1,0 +1,10 @@
+{% comment %}
+  Renders a list of { label, body } sections. body is Markdown.
+  Usage: {% include labeled-sections.html sections=page.sections %}
+{% endcomment %}
+{% for s in include.sections %}
+<section class="section">
+  <div class="label"><span>{{ s.label }}</span></div>
+  <div class="body">{{ s.body | markdownify }}</div>
+</section>
+{% endfor %}

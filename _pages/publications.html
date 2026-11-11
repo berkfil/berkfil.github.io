@@ -1,0 +1,32 @@
+---
+layout: page
+title: "Publications"
+permalink: /publications/
+---
+
+{% comment %}
+  Publications come from the _publications folder, newest first.
+  Front matter used: title, venue, date, paperurl, excerpt.
+{% endcomment %}
+
+{% if site.author.googlescholar %}
+<section class="section">
+  <div class="label"><span>Profile</span></div>
+  <div class="body"><p>You can find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</p></div>
+</section>
+{% endif %}
+
+{% if site.publications.size > 0 %}
+<div class="items">
+  {% for pub in site.publications reversed %}
+  <article class="item">
+    <div>
+      <h3>{{ pub.title }}</h3>
+      <p class="role">{% if pub.venue %}{{ pub.venue }}, {% endif %}{{ pub.date | date: "%Y" }}</p>
+      {% if pub.paperurl %}<a class="btn" href="{{ pub.paperurl | relative_url }}">Read paper</a>{% endif %}
+    </div>
+    <div class="desc">{{ pub.excerpt | markdownify }}</div>
+  </article>
+  {% endfor %}
+</div>
+{% endif %}

@@ -1,0 +1,16 @@
+{% comment %}
+  Research projects from _data/research.yml.
+  An entry shows a button only when it has a url.
+{% endcomment %}
+<div class="items">
+  {% for r in site.data.research %}
+  <article class="item">
+    <div>
+      <h3>{{ r.title }}</h3>
+      {% if r.role %}<p class="role">{{ r.role }}</p>{% endif %}
+      {% if r.url %}<a class="btn" href="{{ r.url | relative_url }}">{{ r.link_text | default: "Read more" }}</a>{% endif %}
+    </div>
+    <div class="desc">{{ r.description | markdownify }}</div>
+  </article>
+  {% endfor %}
+</div>
