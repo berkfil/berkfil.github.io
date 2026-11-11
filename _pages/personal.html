@@ -8,6 +8,21 @@ videos:
   - id: qDs8IEHOXLg
     title: "Berk-Kim Milyoner Olmak İster"
     note: In October 2019, I was a contestant on *Kim Milyoner Olmak İster*, the Turkish version of *Who Wants to Be a Millionaire?*, and made it to the penultimate question.
+# Articles shown under "Writing", newest first. `english` is the translated
+# title shown in parentheses after the original. `page:` (an article hosted on
+# this site) and `url:` (the original on Aposto) each add a button.
+writing:
+  - title: "3573 sayılı kanun"
+    english: "Turkey’s olive-growing law (Law No. 3573)"
+    outlet: "Aposto (apéro), November 2021"
+    url: https://aposto.com/s/xxx-4
+    description: Are olive trees protected under the law, and what is the current government trying to change?
+  - title: "Su: hak mı, ürün mü?"
+    english: "Water: A Right or a Product?"
+    outlet: "Aposto (apéro), July 2021"
+    page: /writing/water/
+    url: https://aposto.com/s/su-bu-siviyi-en-temel-yasam-kaynagi-diye-betimlemek-ve-insanin-en-temel-haklarindan-biri-diye-varsaymak-oldukca-dogal-geliyor-konu-kac-canli-suya-ihtiyac-duymadan-yasayabiliyor-gibi-sorulara-gelince-insan-bu-denli-hayati-bir-maddeye-bedava-ulasamamayi-da-enteresan-buluyor-uzucu-bir-haber
+    description: How bottled-water companies, Nestlé above all, turned water into a product, and the push to make it a public right again.
 ---
 
 {% for v in page.videos %}
@@ -18,3 +33,24 @@ videos:
   </div>
 </section>
 {% endfor %}
+
+{% if page.writing %}
+<section class="group">
+  <h2 class="subhead">Writing</h2>
+  <div class="items">
+    {% for w in page.writing %}
+    <article class="item">
+      <div>
+        <h3>{{ w.title }}{% if w.english %} <span class="translation">({{ w.english }})</span>{% endif %}</h3>
+        <p class="role">{{ w.outlet }}</p>
+        <div class="btns">
+          {% if w.page %}<a class="btn" href="{{ w.page | relative_url }}">Read the article</a>{% endif %}
+          {% if w.url %}<a class="btn" href="{{ w.url }}">Read on Aposto</a>{% endif %}
+        </div>
+      </div>
+      <div class="desc">{{ w.description | markdownify }}</div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

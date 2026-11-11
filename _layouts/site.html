@@ -28,7 +28,7 @@
       <a class="name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <nav class="site-nav" aria-label="Main">
         {% for link in site.data.navigation.main %}
-        <a href="{{ link.url | relative_url }}"{% if link.url == page.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        <a href="{{ link.url | relative_url }}"{% if link.url == page.url or link.url == page.nav %} aria-current="page"{% endif %}>{{ link.title }}</a>
         {% endfor %}
       </nav>
     </div>
