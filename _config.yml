@@ -191,6 +191,11 @@ collections:
 
 # Defaults
 defaults:
+  # /farkle/ is unlisted: keep it out of sitemap.xml
+  - scope:
+      path: "farkle"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""

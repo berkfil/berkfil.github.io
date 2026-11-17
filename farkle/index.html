@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Farkle Table, a KCD2 dice trainer</title>
+<script>try { document.documentElement.dataset.theme = localStorage.getItem('farkle-theme') || 'dark'; } catch (e) { /* default dark */ }</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="brand"><h1>Farkle Table</h1><p>Unofficial practice table using the dice, badges and players of Kingdom Come: Deliverance II</p></div>
+  <div class="seg themes" role="group" aria-label="Colour theme"><span>Theme</span><button data-theme="dark">Dark</button><button data-theme="beige">Beige</button><button data-theme="light">Light</button></div>
+</header>
+<nav aria-label="Sections">
+  <button data-tab="play">Play</button>
+  <button data-tab="stats">Stats</button>
+  <button data-tab="dice">Dice</button>
+  <button data-tab="badges">Badges</button>
+  <button data-tab="opponents">Opponents</button>
+  <button data-tab="rules">Rules</button>
+</nav>
+<main id="app"></main>
+<footer>Fan-made and not affiliated with Warhorse Studios. Data from the Kingdom Come: Deliverance Wiki (CC BY-SA) and Fextralife.</footer>
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
